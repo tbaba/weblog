@@ -9,6 +9,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 
 gem 'acts-as-taggable-on'
+gem 'kaminari'
 
 gem 'capistrano'
 
