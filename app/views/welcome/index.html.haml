@@ -1,2 +1,8 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+- @articles.each do |article|
+  %article
+    %h2.title= article.title
+    .body= article.body
+    .tags
+      - article.tag_list.each do |tag|
+        = tag
+    .created= article.created_at
