@@ -6,6 +6,9 @@
 %p
   %b Body:
   = @article.body
+%p
+  %b Tags:
+  = @article.tag_list
 
 = link_to 'Edit', edit_article_path(@article)
 \|
