@@ -8,6 +8,8 @@ gem 'sqlite3'
 gem 'haml-rails'
 gem 'jquery-rails'
 
+gem 'acts-as-taggable-on'
+
 gem 'capistrano'
 
 group :development, :test do
