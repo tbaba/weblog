@@ -46,16 +46,24 @@ div {
     min-height:300px;
     padding:1em;
     float:left;
-    background:white;
     z-index:2;
+    background:white;
+    overflow:hidden;
     h1 {
       position:fixed;
+      background:white;
+      min-width:260px;
+      max-width:320px;
+      overflow:hidden;
     }
     ul {
       position:fixed;
       margin-top:60px;
       list-style:none;
       padding:0;
+      background:white;
+      min-width:260px;
+      max-width:320px;
       li {
         @include easing_link;
         margin:1em 0;
@@ -74,20 +82,47 @@ div {
     }
   }
   .sidebar:after{
-    display:hidden;
+    content:"";
+    display:block;
     height:1px;
+    overflow:hidden;
   }
 
   .content {
     min-width:260px;
     max-width:640px;
-    padding:1em;
+    padding:1em 1em 1em 0;
     border-left:1px solid gray;
     float:left;
   }
 }
+article {
+  h2 {
+    padding-left:10px;
+    border-bottom:1px solid gray;
+  }
+  .body, .tags, .created {
+    padding-left:15px;
+    padding-bottom:1em;
+  }
+  .tags, .created {
+    border-top:1px dotted gray;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+  .created {
+    text-align:right;
+  }
+  &:last-child {
+    margin-bottom:5em;
+  }
+}
 footer {
   clear:both;
+  width:100%;
+  background:white;
   border-top:1px solid gray;
   padding:1em;
+  position:fixed;
+  bottom:0;
 }
