@@ -3,6 +3,7 @@
     %h2.title= article.title
     .body= simple_format article.body
     .tags
+      = 'Tags:'
       - article.tag_list.each do |tag|
         = tag
     .created= article.created_at.tokyo
