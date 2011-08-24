@@ -9,13 +9,13 @@
 
   %body
 
-    %div{:class => 'container-fluid'}
-      %div{:class => 'sidebar'}
+    %div{:class => 'container'}
+      .sidebar
         %h1 BabaTatsuro.info
-        hoge
-        %br/
-        fuga
-      %div{:class => 'content'}= yield
+        %ul
+          %li= link_to "TOP", root_path
+          %li= link_to "ABOUT", about_path
+      .content= yield
 
     %footer
       Copyright 2011 by Tatsuro Baba.

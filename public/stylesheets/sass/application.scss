@@ -1,0 +1,22 @@
+body {
+  margin:0;
+  padding:0;
+  border:0;
+}
+div {
+  .sidebar {
+    width:260px;
+    padding:1em;
+    margin-right:1em;
+    border-right:1px solid gray;
+    float:left;
+  }
+  .content {
+    padding-top:1em;
+    float:left;
+  }
+}
+footer {
+  clear:both;
+  border-top:1px solid gray;
+}
