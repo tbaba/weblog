@@ -1,23 +1,93 @@
-body {
+$link_color_default: #333;
+$link_color_eased: #069;
+
+@mixin easing_link {
+  -moz-transition:0.5s ease-in-out;
+  -webkit-transition:0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: 'Pictos';
+  src: url('/fonts/pictos-web.eot');
+  src: local('☺'), url('/fonts/pictos-web.woff') format('woff'), url('/fonts/pictos-web.ttf') format('truetype'), url('/fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, p, span,
+h1, h2, h3, h4, h5, h6,
+table, th, tbody, td{
   margin:0;
   padding:0;
   border:0;
+  font-size:12px;
+  font-family:'Helvetica Neue', sans-serif;
 }
+
+a {
+  @include easing_link;
+  text-decoration:none;
+  color:$link_color_default;
+  &:hover {
+    color:$link_color_eased;
+  }
+}
+
+h1 { font-size:2.3em; }
+h2 { font-size:2em; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.2em; }
+h5, h6 { font-size:1em; }
+
 div {
   .sidebar {
-    width:260px;
+    min-width:260px;
+    max-width:320px;
+    min-height:300px;
     padding:1em;
-    margin-right:1em;
-    border-right:1px solid gray;
     float:left;
+    background:white;
+    z-index:2;
+    h1 {
+      position:fixed;
+    }
+    ul {
+      position:fixed;
+      margin-top:60px;
+      list-style:none;
+      padding:0;
+      li {
+        @include easing_link;
+        margin:1em 0;
+        font: {
+          size:1.5em;
+          weight:bold;
+        }
+        &:hover { color:$link_color_eased; }
+        &:before {
+          font-family:"Pictos";
+          font-size:2em/0;
+          content:attr(data-icon);
+          padding-right:2px;
+        }
+      }
+    }
   }
+  .sidebar:after{
+    display:hidden;
+    height:1px;
+  }
+
   .content {
-    width:640px;
-    padding-top:1em;
+    min-width:260px;
+    max-width:640px;
+    padding:1em;
+    border-left:1px solid gray;
     float:left;
   }
 }
 footer {
   clear:both;
   border-top:1px solid gray;
+  padding:1em;
 }

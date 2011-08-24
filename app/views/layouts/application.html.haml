@@ -12,8 +12,10 @@
       .sidebar
         %h1 BabaTatsuro.info
         %ul
-          %li= link_to "TOP", root_path
-          %li= link_to "ABOUT", about_path
+          %li{'data-icon' => 'N'}= link_to "top", root_path
+          %li{'data-icon' => 'i'}= link_to "about", about_path
+          %li{'data-icon' => 'B'}= link_to "twitter", 'http://twitter.com/BabaTatsuro'
+          %li{'data-icon' => 'U'}= link_to "facebook", 'http://facebook.com/tatsuro.baba'
       .content= yield
 
     %footer
