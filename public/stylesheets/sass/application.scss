@@ -113,16 +113,44 @@ article {
   .created {
     text-align:right;
   }
-  &:last-child {
-    margin-bottom:5em;
-  }
 }
 footer {
   clear:both;
-  width:100%;
+  min-width:260px;
+  max-width:320px;
   background:white;
   border-top:1px solid gray;
   padding:1em;
   position:fixed;
   bottom:0;
+}
+
+#about {
+  padding-left:15px;
+  h3 {
+    clear:both;
+    padding:2em 0 1em;
+    &:first-child {
+      padding-top:1em;
+    }
+  }
+  dl {
+    dt {
+      font:{
+        size:16px;
+        weight:bold;
+      }
+      margin-bottom:1em;
+      clear:both;
+      float:left;
+      width:60px;
+    }
+    dd {
+      font: {
+        size:14px;
+      }
+      float:left;
+      padding-top:3px;
+    }
+  }
 }
