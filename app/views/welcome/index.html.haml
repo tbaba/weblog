@@ -1,7 +1,7 @@
 - @articles.each do |article|
   %article
     %h2.title= article.title
-    .body= article.body
+    .body= simple_format article.body
     .tags
       - article.tag_list.each do |tag|
         = tag
