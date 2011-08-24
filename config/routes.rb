@@ -2,7 +2,7 @@ Weblog::Application.routes.draw do
   root :to => "welcome#index"
 
   resources :articles
-  get "welcome/about", :as => :about
+  get "about" => 'welcome#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
