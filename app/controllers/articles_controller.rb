@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_filter :tags
+
   def index
     @articles = Article.all
   end

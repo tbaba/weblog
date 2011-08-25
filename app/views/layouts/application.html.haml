@@ -16,6 +16,10 @@
           %li{'data-icon' => 'i'}= link_to "about", about_path
           %li{'data-icon' => 'B'}= link_to "twitter", 'http://twitter.com/BabaTatsuro'
           %li{'data-icon' => 'U'}= link_to "facebook", 'http://facebook.com/tatsuro.baba'
+        .tag_cloud
+          %h2 Tag Cloud
+          - tag_cloud(@tags, %w(tag1 tag2 tag3 tag4)) do |tag, css_class|
+            %span{:class => css_class}= tag.name
       .content= yield
 
     %footer
