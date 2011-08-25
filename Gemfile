@@ -11,6 +11,7 @@ gem 'jquery-rails'
 
 gem 'acts-as-taggable-on'
 gem 'kaminari'
+gem 'compass'
 
 gem 'capistrano'
 
