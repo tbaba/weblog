@@ -8,7 +8,6 @@ gem 'sqlite3'
 
 gem 'haml-rails'
 gem 'jquery-rails'
-gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 
 gem 'acts-as-taggable-on'
 gem 'kaminari'
