@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pictos';
+  src: url("/fonts/pictos-web.eot");
+  src: local("☺"), url("/fonts/pictos-web.woff") format("woff"), url("/fonts/pictos-web.ttf") format("truetype"), url("/fonts/pictos-web.svg#webfontIyfZbseF") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 19, sass/application.scss */
+html, body, div, p, span,
+h1, h2, h3, h4, h5, h6,
+table, th, tbody, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* line 27, sass/application.scss */
+a {
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: #333333;
+}
+/* line 31, sass/application.scss */
+a:hover {
+  color: #006699;
+}
+
+/* line 36, sass/application.scss */
+h1 {
+  font-size: 2.3em;
+}
+
+/* line 37, sass/application.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 38, sass/application.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/* line 39, sass/application.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 40, sass/application.scss */
+h5, h6 {
+  font-size: 1em;
+}
+
+/* line 43, sass/application.scss */
+div .sidebar {
+  min-width: 260px;
+  max-width: 320px;
+  min-height: 300px;
+  padding: 1em;
+  float: left;
+  z-index: 2;
+  background: white;
+  overflow: hidden;
+}
+/* line 52, sass/application.scss */
+div .sidebar h1 {
+  position: fixed;
+  background: white;
+  min-width: 260px;
+  max-width: 320px;
+  overflow: hidden;
+}
+/* line 59, sass/application.scss */
+div .sidebar ul {
+  position: fixed;
+  margin-top: 60px;
+  list-style: none;
+  padding: 0;
+  background: white;
+  min-width: 260px;
+  max-width: 320px;
+}
+/* line 67, sass/application.scss */
+div .sidebar ul li {
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  margin: 1em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 74, sass/application.scss */
+div .sidebar ul li:hover {
+  color: #006699;
+}
+/* line 75, sass/application.scss */
+div .sidebar ul li:before {
+  font-family: "Pictos";
+  font-size: 2em/0;
+  content: attr(data-icon);
+  padding-right: 2px;
+}
+/* line 83, sass/application.scss */
+div .sidebar .tag_cloud {
+  position: relative;
+  overflow: hidden;
+  margin-top: 250px;
+}
+/* line 89, sass/application.scss */
+div .sidebar:after {
+  content: "";
+  display: block;
+  height: 1px;
+  overflow: hidden;
+}
+/* line 96, sass/application.scss */
+div .content {
+  min-width: 260px;
+  max-width: 640px;
+  padding: 1em 1em 1em 0;
+  border-left: 1px solid gray;
+  float: left;
+}
+
+/* line 106, sass/application.scss */
+.tag_cloud .tag1 {
+  font-size: 10px;
+}
+/* line 107, sass/application.scss */
+.tag_cloud .tag2 {
+  font-size: 12px;
+}
+/* line 108, sass/application.scss */
+.tag_cloud .tag3 {
+  font-size: 14px;
+}
+/* line 109, sass/application.scss */
+.tag_cloud .tag4 {
+  font-size: 16px;
+}
+
+/* line 113, sass/application.scss */
+article h2 {
+  padding-left: 10px;
+  border-bottom: 1px solid gray;
+}
+/* line 117, sass/application.scss */
+article .body, article .tags, article .created {
+  padding-left: 15px;
+  padding-bottom: 1em;
+}
+/* line 121, sass/application.scss */
+article .tags, article .created {
+  border-top: 1px dotted gray;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* line 126, sass/application.scss */
+article .created {
+  text-align: right;
+}
+
+/* line 131, sass/application.scss */
+footer {
+  clear: both;
+  min-width: 260px;
+  max-width: 320px;
+  background: white;
+  border-top: 1px solid gray;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+}
+
+/* line 142, sass/application.scss */
+#about {
+  padding-left: 15px;
+}
+/* line 144, sass/application.scss */
+#about h3 {
+  clear: both;
+  padding: 2em 0 1em;
+}
+/* line 147, sass/application.scss */
+#about h3:first-child {
+  padding-top: 1em;
+}
+/* line 152, sass/application.scss */
+#about dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  clear: both;
+  float: left;
+  width: 60px;
+}
+/* line 162, sass/application.scss */
+#about dl dd {
+  font-size: 14px;
+  float: left;
+  padding-top: 3px;
+}
